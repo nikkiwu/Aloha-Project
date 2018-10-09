@@ -1,0 +1,40 @@
+@font-face {
+    font-family: PlayfairDisplay-Bold;
+    src: url("../fonts/PlayfairDisplay-Bold.otf");
+}
+
+@font-face {
+    font-family: PlayfairDisplay-Bolditalic;
+    src: url("../fonts/PlayfairDisplay-BoldItalic.otf");
+}
+
+@font-face {
+    font-family: PlayfairDisplay-italic;
+    src: url("../fonts/PlayfairDisplay-Italic.otf");
+}
+
+@font-face {
+    font-family: PlayfairDisplay-Regular;
+    src: url("../fonts/PlayfairDisplay-Regular.otf");
+}
+
+@font-face {
+    font-family: Raleway-Light;
+    src: url("../fonts/Raleway-Light.ttf");
+}
+
+@font-face {
+    font-family: Raleway-Lightitalic;
+    src: url("../fonts/Raleway-LightItalic.ttf");
+}
+
+@font-face {
+    font-family: Raleway-Medium;
+    src: url("../fonts/Raleway-Medium.ttf");
+}
+
+@font-face {
+    font-family: Raleway-Mediumitalic;
+    src: url("../fonts/Raleway-MediumItalic.ttf");
+}
+
