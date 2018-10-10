@@ -12,14 +12,23 @@ body, html{
 
 }
 
+h1 {
+    font-family: PlayfairDisplay-Bold, sans-serif;
+}
+
 h2{
     font-size: 2rem;
     font-family: PlayfairDisplay-Regular, sans-serif;
 }
+
+
 span{
     font-style: italic;
-    font-weight: 10;
+    font-weight: lighter;
 }
+
+
+
 /* NAV HEADER */
 
 
@@ -137,14 +146,9 @@ nav ul li a:hover{
     margin: 1rem 2.5rem;
 }
 
-.about-text h2{
-    font-size: 2rem;
-    font-family: PlayfairDisplay-Regular, sans-serif;
-}
 
 .about-text span{
     font-style: italic;
-    font-weight: 10;
 }
 
 
@@ -278,12 +282,12 @@ nav ul li a:hover{
 
 }
 
-#email, #subscribe{
+
+
+input[type="email"] {
+    border: solid white;
     border-radius: 25px;
     font-family: Raleway-Light, sans-serif;
-}
-
-#email{
     color: #2d2d2d;
     font-size: 1rem;
     height: 2.5rem;
@@ -292,19 +296,23 @@ nav ul li a:hover{
 
 }
 
-#subscribe{
+input[type="submit"]{
+    border: solid white 1px;
+    font-weight: bold;
+    border-radius: 25px;
+    font-family: Raleway-Medium, sans-serif;
     background: #e2574c;
     color: white;
     width: 8.6rem;
     height: 2.3rem;
-    font-size: 1em;
+    font-size: 1rem;
     position: absolute;
     right:2.8rem;
     top: 2.1rem;
     cursor: pointer;
 }
 
-#subscribe:hover{
+input[type="submit"]:hover{
     background: #b64036;
 }
 
@@ -345,7 +353,10 @@ footer{
     display: none;
 }
 .footer-list, .footer-container{
-    margin: 0 8em;
+   display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -375,47 +386,62 @@ i{
 
 
 
-/* MEDIA QUERIES */
+/* ------------------
+
+
+
+
+
+    MEDIA QUERIES
+
+
+
+
+---------------------*/
+
 
 
 @media all and (min-width: 480px) {
+    /* NAV HEADER */
 
-
-
-}
-
-@media all and (min-width: 1240px) {
 
     header{
         display: flex;
         align-items: center;
         justify-content: center;
-        max-width: 1240px;
+        max-width: 100vw;
+        flex-flow: nowrap;
     }
 
+    .logo{
+        margin: 1rem 1rem;
+    }
 
     .logo img{
-        height: 5em;
+        height: 2.5rem;
         width: auto;
-        padding: 10px;
     }
 
     .shopping-cart{
         order: 3;
-        padding-right: 5em;
+        margin: 1rem 1rem;
     }
 
-    .shopping-cart img{
-        height: 5em;
+    .shopping-cart img {
+        height: 2.5rem;
         width: auto;
-        padding: 10px;
+        margin-left: 3rem;
     }
+
+
     nav {
+        order: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100vw;
-        line-height: 60px;
+        line-height: 0;
+        border-top: none;
     }
 
 
@@ -425,22 +451,21 @@ i{
         color: #fff;
         text-align: center;
         padding: 0;
+
     }
 
     nav li{
         display: inline-block;
     }
 
-    nav ul li {
-        margin: 1em 1em;
-    }
 
     nav ul li a {
+        padding: 0 0.5rem;
         font-weight: bold;
         text-transform: uppercase;
         text-decoration: none;
         color: #e2574c;
-        font-size: 16px;
+        font-size: 0.8rem;
         font-family: Raleway-Light, sans-serif;
 
 
@@ -457,9 +482,9 @@ i{
 
     .banner{
         width: 100%;
-        height: 550px;
+        height: 80%;
         background: linear-gradient(rgba(0,0,0,.20) 0,rgba(0,0,0,.60)), url("../images/banner-girl.png") no-repeat bottom, url("../images/flower-bkgd.jpg") center repeat-x;
-        background-size: contain, 17%;
+        background-size: cover, 25%;
         display: flex;
         flex-flow: wrap;
         justify-content: center;
@@ -467,14 +492,18 @@ i{
     }
 
     .banner-text{
+
+        width: 73%;
         text-align: center;
         color: white;
-        font-size: 3.7em;
+        font-size: 2.8rem;
         font-family: PlayfairDisplay-Regular, sans-serif;
     }
     .new-collection{
+        font-weight: bold;
+        font-family: Raleway-Medium,sans-serif;
         text-transform: uppercase;
-        font-size: 30px;
+        font-size: 1.2rem;
 
     }
 
@@ -486,21 +515,17 @@ i{
         justify-content: center;
         text-align: center;
         padding: 2.5em 0 2em 0;
-        font-size: 28px;
     }
 
     .about-text p {
-        width: 100%;
-        line-height: 3rem;
-        font-size: 18px;
+        line-height: 2rem;
+        font-size: 1rem;
+        margin: 1rem 4rem;
     }
 
-    .about-text h1, .signup-container h1{
-        font-family: PlayfairDisplay-Bold, sans-serif;
-    }
 
-    .about-text span, .signup-container span{
-        font-family: PlayfairDisplay-italic, sans-serif;
+    .about-text span{
+        font-style: italic;
     }
 
 
@@ -509,21 +534,21 @@ i{
 
     .items{
         width: 100%;
-        height: 85%;
+        height: 50%;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow:  row wrap;
         align-items: center;
         justify-content: center;
     }
 
     .cate-small, .trends, .glasses, .sale, .bags{
-        height: 50%;
+        height: 33%;
         width: 28%;
         border: 3px solid white;
     }
 
     .cate-big, .mens, .womens{
-        height: 50%;
+        height: 33%;
         width: 44%;
         border: 3px solid white;
 
@@ -533,11 +558,11 @@ i{
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
     }
 
     .title a{
-        font-size: 2.5em;
+        font-size: 1.5rem;
         color: white;
         text-transform: uppercase;
         text-decoration: none;
@@ -584,6 +609,243 @@ i{
 
     /* DISPLAYED CLOTHING */
 
+
+    .displayed{
+        padding: 12rem 0;
+    }
+
+    .container-display span{
+        font-family: PlayfairDisplay-italic, sans-serif;
+        font-size: 28px;
+    }
+
+    .container-display h1{
+        font-family: PlayfairDisplay-Bold, sans-serif;
+        font-size: 28px;
+
+    }
+
+    /* SIGN UP */
+
+    .signup{
+        margin: 0.5em 0;
+        color: white;
+        width: 100vw;
+        height: 65vh;
+        background:linear-gradient(rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url("../images/wave-bkgd.jpg") bottom no-repeat;
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .signup-container h2{
+        padding: 1rem 0;
+    }
+
+    .signup-container p{
+        line-height: 2em;
+        font-size: 0.9rem;
+        margin: 0 6rem;
+    }
+
+    .signup-form{
+        position: relative;
+        width: 100%;
+        padding-top: 2em;
+
+    }
+
+
+
+    input[type="email"]{
+        border-radius: 25px;
+        font-family: Raleway-Light, sans-serif;
+        color: #2d2d2d;
+        font-size: 1rem;
+        height: 2.5rem;
+        width: 20rem;
+        padding: 0 1em;
+
+    }
+
+    input[type="submit"]{
+        font-weight: bold;
+        border-radius: 25px;
+        font-family: Raleway-Medium, sans-serif;
+        background: #e2574c;
+        color: white;
+        width: 8.6rem;
+        height: 2.4rem;
+        font-size: 1rem;
+        position: absolute;
+        right: 9.9rem;
+        top: 2.1rem;
+        cursor: pointer;
+    }
+
+    #subscribe:hover{
+        background: #b64036;
+    }
+
+
+    /* FOOTER */
+
+
+
+
+    footer{
+        display: flex;
+        flex-flow: row ;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 3rem;
+        text-align: center;
+        background: #242424;
+        color: white;
+    }
+
+    .copyright, .contact,  .contact a , .address {
+        font-family: PlayfairDisplay-Regular, sans-serif;
+        color: white;
+        font-size: 0.9rem;
+    }
+
+
+    .contact{
+        padding: 1rem 0;
+    }
+
+    .address{
+        opacity: 0.5;
+    }
+    .footer-list ul li{
+        display: block;
+    }
+
+    .footer-list span{
+        display: inline-block;
+        font-size: 1rem;
+        font-weight: bold;
+        font-style: normal;
+    }
+    .footer-list, .footer-container{
+        display: flex;
+        align-items: normal;
+        text-align: left;
+        margin: 0;
+
+    }
+
+    .footer-list ul li{
+        list-style: none;
+        padding: 0.5em 0;
+
+
+    }
+    .footer-list ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+
+    .footer-list ul li a:hover, .contact a:hover{
+        color: #b64036;
+    }
+
+
+
+
+    i{
+        padding: 0 0.7em;
+        font-size: 0.73rem;
+    }
+
+
+}
+
+@media all and (min-width: 1240px) {
+
+    header{
+        justify-content: center;
+    }
+
+
+    .logo img{
+        height: 4rem;
+    }
+
+    .shopping-cart img{
+        height: 4rem;
+    }
+
+
+    nav ul li {
+        margin: 0 1rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+
+
+    /* BANNER */
+
+    .banner{
+        background-size: contain, 17%;
+    }
+
+    .banner-text{
+        font-size: 3.7em;
+    }
+
+    .new-collection{
+        font-size: 1rem;
+
+    }
+
+    /* QUICK DESCRIPTION */
+
+    .about{
+        margin: 2rem 0;
+    }
+
+
+    .about-text p {
+        margin: 1rem 27rem;
+    }
+
+
+    /* CATEGORY SELECTION */
+
+    .items{
+        height: 85%;
+    }
+
+    .cate-small, .trends, .glasses, .sale, .bags{
+        height: 50%;
+        width: 28%;
+    }
+
+    .cate-big, .mens, .womens{
+        height: 50%;
+
+    }
+
+    .cate-big, .cate-small{
+        flex-flow: row wrap;
+    }
+
+    .title a{
+        font-size: 2.5em;
+    }
+
+    /* DISPLAYED CLOTHING */
+
     .displayed{
 
     }
@@ -610,61 +872,28 @@ i{
     /* SIGN UP */
 
     .signup{
-        margin: 0.5em 0;
-        color: white;
-        width: 100%;
-        height: 40vh;
-        background:linear-gradient(rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url("../images/wave-bkgd.jpg") bottom no-repeat;
-        background-size: cover;
-        text-align: center;
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        align-items: center;
-
+        height: 40%;
     }
 
     .signup-container h1{
         font-size: 2.5em;
-        padding-bottom: 1em;
+        padding-bottom: 1rem;
     }
 
     .signup-container p{
-        line-height: 2em;
-        font-size: 1.2em;
+        margin: 0 23rem;
+        line-height: 3rem;
+        font-size: 1.2rem;
     }
 
-    .signup-form{
-        position: relative;
-        width: 50vw;
-        padding-top: 2em;
-
-    }
-
-    #email, #subscribe{
-        border-radius: 25px;
-        font-family: Raleway-Light, sans-serif;
-    }
-
-    #email{
-        color: #2d2d2d;
-        font-size: 1rem;
-        height: 3em;
-        width: 30em;
-        padding: 0 1em;
+    input[type="email"]{
+        width: 25rem;
 
     }
 
-    #subscribe{
-        background: #e2574c;
-        color: white;
-        width: 8.6em;
-        height: 2.6em;
-        font-size: 1em;
-        position: absolute;
-        right: 7.7em;
-        top: 2.2em;
-        cursor: pointer;
+    input[type="submit"]{
+        right: 32.6rem;
+        top: 2.06rem;
     }
 
     #subscribe:hover{
@@ -672,7 +901,7 @@ i{
     }
 
 
-    /* FOOTER */
+     /*FOOTER */
 
 
 
