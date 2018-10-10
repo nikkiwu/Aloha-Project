@@ -36,7 +36,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;  /* new */
-    max-width: 100vw;
+    max-width: 100%;
     flex-flow: wrap;
 }
 
@@ -64,7 +64,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     line-height: 3rem;
     border-top: #d7d7d7 solid 1px;
     margin: 0 1rem;
@@ -156,8 +156,8 @@ nav ul li a:hover{
 /* CATEGORY SELECTION */
 
 .items{
-    width: 100vw;
-    height: 85vh;
+    width: 100%;
+    height: 85%;
     display: flex;
     flex-flow: wrap;
     align-items: center;
@@ -165,14 +165,14 @@ nav ul li a:hover{
 }
 
 .cate-small, .trends, .glasses, .sale, .bags{
-    height: 25vh;
-    width: 50vw;
+    height: 25%;
+    width: 50%;
     border: 3px solid white;
 }
 
 .cate-big, .mens, .womens{
-    height: 28vh;
-    width: 100vw;
+    height: 28%;
+    width: 100%;
     border: 3px solid white;
 
 }
@@ -253,8 +253,8 @@ nav ul li a:hover{
 .signup{
     margin: 0.5em 0;
     color: white;
-    width: 100vw;
-    height: 40vh;
+    width: 100%;
+    height: 40%;
     background:linear-gradient(rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url("../images/wave-bkgd.jpg") left no-repeat;
     background-size: cover;
     text-align: center;
@@ -277,7 +277,7 @@ nav ul li a:hover{
 
 .signup-form{
     position: relative;
-    width: 100vw;
+    width: 100%;
     padding-top: 2em;
 
 }
@@ -285,6 +285,7 @@ nav ul li a:hover{
 
 
 input[type="email"] {
+    position: relative;
     border: solid white;
     border-radius: 25px;
     font-family: Raleway-Light, sans-serif;
@@ -401,7 +402,7 @@ i{
 
 
 
-@media all and (min-width: 480px) {
+@media all and (min-width: 600px) {
     /* NAV HEADER */
 
 
@@ -409,7 +410,7 @@ i{
         display: flex;
         align-items: center;
         justify-content: center;
-        max-width: 100vw;
+        max-width: 100%;
         flex-flow: nowrap;
     }
 
@@ -439,7 +440,7 @@ i{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100vw;
+        width: 100%;
         line-height: 0;
         border-top: none;
     }
@@ -630,8 +631,8 @@ i{
     .signup{
         margin: 0.5em 0;
         color: white;
-        width: 100vw;
-        height: 65vh;
+        width: 100%;
+        height: 65%;
         background:linear-gradient(rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url("../images/wave-bkgd.jpg") bottom no-repeat;
         background-size: cover;
         text-align: center;
@@ -771,6 +772,7 @@ i{
 
     header{
         justify-content: center;
+        margin: 0 1rem;
     }
 
 
@@ -892,7 +894,7 @@ i{
     }
 
     input[type="submit"]{
-        right: 32.6rem;
+        right: 32.1rem;
         top: 2.06rem;
     }
 
