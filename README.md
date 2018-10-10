@@ -1,5 +1,5 @@
-# PROJECT 1 ALOHA WEBSITE
+# Aloha Project
 
-This project we have to do is a recreation of the one, one of the teachers have made.
+Recreation of an already created website by REDAcademy. This website contains a clothing items and acessories for sale.
 
-This website has to be responsive through all devices and must fit the criteria.
+In my recreation, I had to start from scratch and create a responsive website.
