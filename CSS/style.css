@@ -29,6 +29,7 @@ span{
 
 
 
+
 /* NAV HEADER */
 
 
@@ -40,23 +41,15 @@ header{
     flex-flow: wrap;
 }
 
-.logo{
+.logo, .shopping-cart{
     margin: 1rem 1rem;
 }
 
-.logo img{
+.logo img, .shopping-cart img{
     height: 2.5rem;
     width: auto;
 }
 
-.shopping-cart{
-    margin: 10px 10px;
-}
-
-.shopping-cart img {
-    height: 2.5rem;
-    width: auto;
-}
 
 
 nav {
@@ -110,7 +103,7 @@ nav ul li a:hover{
     width: 100%;
     height: 46%;
     background: linear-gradient(rgba(0,0,0,.20) 0,rgba(0,0,0,.60)), url("../images/banner-girl.png") no-repeat bottom, url("../images/flower-bkgd.jpg") center repeat-x;
-    background-size: cover, 35%;
+    background-size: cover, 32%;
     display: flex;
     flex-flow: wrap;
     justify-content: center;
@@ -125,6 +118,8 @@ nav ul li a:hover{
     font-family: PlayfairDisplay-Regular, sans-serif;
 }
 .new-collection{
+    font-family: Raleway-Medium,sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     font-size: 1rem;
 
@@ -231,20 +226,14 @@ nav ul li a:hover{
 }
 
 /* DISPLAYED CLOTHING */
-
-
 .displayed{
-    padding: 12rem 0;
+    padding: 4rem 0;
 }
 
-.container-display span{
-    font-family: PlayfairDisplay-italic, sans-serif;
-    font-size: 28px;
-}
 
 .container-display h1{
     font-family: PlayfairDisplay-Bold, sans-serif;
-    font-size: 28px;
+    font-size: 2rem;
 
 }
 
@@ -278,7 +267,7 @@ nav ul li a:hover{
 .signup-form{
     position: relative;
     width: 100%;
-    padding-top: 2em;
+    padding-top: 2rem;
 
 }
 
@@ -308,7 +297,7 @@ input[type="submit"]{
     height: 2.3rem;
     font-size: 1rem;
     position: absolute;
-    right:2.8rem;
+    right:3rem;
     top: 2.1rem;
     cursor: pointer;
 }
@@ -401,295 +390,85 @@ i{
 ---------------------*/
 
 
-
 @media all and (min-width: 600px) {
     /* NAV HEADER */
 
-
     header{
-        display: flex;
-        align-items: center;
         justify-content: center;
-        max-width: 100%;
         flex-flow: nowrap;
-    }
-
-    .logo{
-        margin: 1rem 1rem;
-    }
-
-    .logo img{
-        height: 2.5rem;
-        width: auto;
     }
 
     .shopping-cart{
         order: 3;
-        margin: 1rem 1rem;
     }
 
     .shopping-cart img {
-        height: 2.5rem;
-        width: auto;
         margin-left: 3rem;
     }
 
 
     nav {
         order: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
         line-height: 0;
         border-top: none;
     }
 
 
-
-    nav ul {
-        list-style: none;
-        color: #fff;
-        text-align: center;
-        padding: 0;
-
-    }
-
-    nav li{
-        display: inline-block;
-    }
-
-
-    nav ul li a {
-        padding: 0 0.5rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #e2574c;
-        font-size: 0.8rem;
-        font-family: Raleway-Light, sans-serif;
-
-
-    }
-
-    nav ul li a:hover{
-        color: #b64036;
-        transition: 1s;
-    }
-
-
-
     /* BANNER */
 
     .banner{
-        width: 100%;
         height: 80%;
-        background: linear-gradient(rgba(0,0,0,.20) 0,rgba(0,0,0,.60)), url("../images/banner-girl.png") no-repeat bottom, url("../images/flower-bkgd.jpg") center repeat-x;
-        background-size: cover, 25%;
-        display: flex;
-        flex-flow: wrap;
-        justify-content: center;
-        align-items: center;
+        background-size: cover, 21%;
     }
 
     .banner-text{
-
-        width: 73%;
-        text-align: center;
-        color: white;
         font-size: 2.8rem;
-        font-family: PlayfairDisplay-Regular, sans-serif;
     }
+
     .new-collection{
-        font-weight: bold;
-        font-family: Raleway-Medium,sans-serif;
-        text-transform: uppercase;
         font-size: 1.2rem;
 
     }
 
     /* QUICK DESCRIPTION */
 
-    .about{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 2.5em 0 2em 0;
-    }
-
     .about-text p {
-        line-height: 2rem;
         font-size: 1rem;
         margin: 1rem 4rem;
     }
 
-
-    .about-text span{
-        font-style: italic;
-    }
-
-
-
     /* CATEGORY SELECTION */
 
     .items{
-        width: 100%;
-        height: 50%;
-        display: flex;
         flex-flow:  row wrap;
-        align-items: center;
-        justify-content: center;
     }
 
     .cate-small, .trends, .glasses, .sale, .bags{
-        height: 33%;
+        height: 51%;
         width: 28%;
-        border: 3px solid white;
     }
-
     .cate-big, .mens, .womens{
-        height: 33%;
+        height: 51%;
         width: 44%;
-        border: 3px solid white;
-
     }
 
-    .cate-big, .cate-small{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: column wrap;
-    }
-
-    .title a{
-        font-size: 1.5rem;
-        color: white;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-family: Raleway-Medium, sans-serif;
-        text-shadow: 1px 1px 1px #2d2d2d;
-    }
-
-
-
-    .title a:hover{
-        color: #b64036;
-    }
-
-    .mens{
-        background:linear-gradient(rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url("../images/mens-category.jpg") center no-repeat;
-        background-size: cover;
-    }
-
-    .trends{
-        background:linear-gradient(rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),  url("../images/trends-category.jpg")center no-repeat;
-        background-size: cover;
-    }
-
-    .glasses{
-        background: linear-gradient(rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/glasses-category.jpg") center no-repeat;
-        background-size: cover;
-    }
-
-    .sale{
-        background:linear-gradient(rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),  url("../images/sale-category.jpg") center no-repeat;
-        background-size: cover;
-
-    }
-
-    .bags{
-        background:linear-gradient(rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),  url("../images/bags-category.jpg") center no-repeat;
-        background-size: cover;
-    }
-
-    .womens{
-        background:linear-gradient(rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),  url("../images/womens-category.jpg") center no-repeat;
-        background-size: cover;
-    }
-
-    /* DISPLAYED CLOTHING */
-
-
-    .displayed{
-        padding: 12rem 0;
-    }
-
-    .container-display span{
-        font-family: PlayfairDisplay-italic, sans-serif;
-        font-size: 28px;
-    }
-
-    .container-display h1{
-        font-family: PlayfairDisplay-Bold, sans-serif;
-        font-size: 28px;
-
-    }
 
     /* SIGN UP */
 
     .signup{
-        margin: 0.5em 0;
-        color: white;
-        width: 100%;
         height: 65%;
         background:linear-gradient(rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url("../images/wave-bkgd.jpg") bottom no-repeat;
-        background-size: cover;
-        text-align: center;
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .signup-container h2{
-        padding: 1rem 0;
     }
 
     .signup-container p{
-        line-height: 2em;
-        font-size: 0.9rem;
         margin: 0 6rem;
     }
 
-    .signup-form{
-        position: relative;
-        width: 100%;
-        padding-top: 2em;
 
-    }
-
-
-
-    input[type="email"]{
-        border-radius: 25px;
-        font-family: Raleway-Light, sans-serif;
-        color: #2d2d2d;
-        font-size: 1rem;
-        height: 2.5rem;
-        width: 20rem;
-        padding: 0 1em;
-
-    }
 
     input[type="submit"]{
-        font-weight: bold;
-        border-radius: 25px;
-        font-family: Raleway-Medium, sans-serif;
-        background: #e2574c;
-        color: white;
-        width: 8.6rem;
-        height: 2.4rem;
-        font-size: 1rem;
-        position: absolute;
         right: 9.9rem;
         top: 2.1rem;
-        cursor: pointer;
-    }
-
-    #subscribe:hover{
-        background: #b64036;
     }
 
 
@@ -702,27 +481,10 @@ i{
         display: flex;
         flex-flow: row ;
         justify-content: space-between;
-        align-items: center;
         padding: 4rem 3rem;
-        text-align: center;
-        background: #242424;
-        color: white;
-    }
-
-    .copyright, .contact,  .contact a , .address {
-        font-family: PlayfairDisplay-Regular, sans-serif;
-        color: white;
-        font-size: 0.9rem;
     }
 
 
-    .contact{
-        padding: 1rem 0;
-    }
-
-    .address{
-        opacity: 0.5;
-    }
     .footer-list ul li{
         display: block;
     }
@@ -734,35 +496,10 @@ i{
         font-style: normal;
     }
     .footer-list, .footer-container{
-        display: flex;
         align-items: normal;
         text-align: left;
         margin: 0;
 
-    }
-
-    .footer-list ul li{
-        list-style: none;
-        padding: 0.5em 0;
-
-
-    }
-    .footer-list ul li a{
-        text-decoration: none;
-        color: white;
-    }
-
-
-    .footer-list ul li a:hover, .contact a:hover{
-        color: #b64036;
-    }
-
-
-
-
-    i{
-        padding: 0 0.7em;
-        font-size: 0.73rem;
     }
 
 
