@@ -36,7 +36,7 @@ span{
 header{
     display: flex;
     align-items: center;
-    justify-content: space-between;  /* new */
+    justify-content: space-between;
     max-width: 100%;
     flex-flow: wrap;
 }
