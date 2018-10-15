@@ -13,11 +13,12 @@ body, html{
 }
 
 h1 {
-    font-family: PlayfairDisplay-Bold, sans-serif;
+    font-family: PlayfairDisplay-Regular, sans-serif;
 }
 
 h2{
-    font-size: 2rem;
+    word-spacing: 0.2rem;
+    font-size: 2.5rem;
     font-family: PlayfairDisplay-Regular, sans-serif;
 }
 
@@ -90,10 +91,6 @@ nav ul li a {
 
 }
 
-nav ul li a:hover{
-    color: #b64036;
-    transition: 1s;
-}
 
 
 
@@ -104,9 +101,7 @@ nav ul li a:hover{
     height: 46%;
     background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/banner-girl.png") no-repeat center 60px,url("../images/flower-bkgd.jpg") repeat-x top;
     background-size: cover,150px 369px,cover;
-    height: 400px;
-    position: relative
-    background-size: cover,150px 369px,cover;
+    position: relative;
     display: flex;
     flex-flow: wrap;
     justify-content: center;
@@ -135,7 +130,7 @@ nav ul li a:hover{
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 2.5em 0 2em 0;
+    padding: 2.5rem 0 2rem 0;
 }
 
 .about-text p {
@@ -193,9 +188,6 @@ nav ul li a:hover{
 
 
 
-.title a:hover{
-    color: #b64036;
-}
 
 
 
@@ -245,11 +237,11 @@ nav ul li a:hover{
 
 .carousel-cell h1{
     color: #e2574c;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
 }
 
 .container-display h2{
-    font-size: 2rem;
     padding-bottom: 3rem;
     text-align: center;
 
@@ -272,12 +264,11 @@ nav ul li a:hover{
 }
 
 .signup-container h2{
-    text-shadow: hoff voff blur #000;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.42);
     padding: 1rem 0;
 }
 
 .signup-container p{
-    font-family: Raleway-Medium,sans-serif;
     line-height: 2rem;
     font-size: 0.9rem;
     margin: 0 2rem;
@@ -314,9 +305,6 @@ input[type="submit"]{
     top: .2rem;
 }
 
-input[type="submit"]:hover{
-    background: #b64036;
-}
 
 
 /* FOOTER */
@@ -371,9 +359,7 @@ footer{
 
 
 
-.footer-list ul li a:hover, .contact a:hover{
-    color: #b64036;
-}
+
 
 
 i{
@@ -420,8 +406,16 @@ i{
         border-top: none;
     }
 
+    nav ul li a{
+        padding: 0 0.5rem;
+    }
+
 
     /* BANNER */
+    .banner{
+        height: 60%;
+    }
+
 
     .banner-text{
         font-size: 2.8rem;
@@ -435,37 +429,47 @@ i{
     /* QUICK DESCRIPTION */
 
     .about-text p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin: 1rem 4rem;
     }
 
     /* CATEGORY SELECTION */
 
     .items{
+        height: 45%;
         flex-flow:  row wrap;
+        align-items: normal;
     }
 
     .cate-small, .trends, .glasses, .sale, .bags{
-        min-height: 51%;
         min-width: 28%;
     }
     .cate-big, .mens, .womens{
-        min-height: 51%;
         min-width: 44%;
     }
 
 
     /* SIGN UP */
 
-    .signup{
-        min-height: 65%;
+    .signup-form{
+        width: 54%;
     }
+
+    .signup{
+        min-height: 52%;
+    }
+
 
     .signup-container p{
-        margin: 0 6rem;
+        font-size: 1rem;
+        margin: 0 5rem;
     }
 
+    .signup-container{
+        padding: 4rem 0;
+        max-width: 720px;
 
+    }
 
 
 
@@ -512,7 +516,7 @@ i{
 
     header{
         justify-content: center;
-        margin: 0 1rem;
+        margin: 0 7rem;
     }
 
 
@@ -533,6 +537,11 @@ i{
         font-size: 1rem;
     }
 
+    nav ul li a:hover{
+        color: #b64036;
+        transition: 1s;
+    }
+
 
 
     /* BANNER */
@@ -543,7 +552,7 @@ i{
     }
 
     .banner-text{
-        font-size: 3.7em;
+        font-size: 3.8rem;
     }
 
     .new-collection{
@@ -559,7 +568,7 @@ i{
 
 
     .about-text p {
-        margin: 1rem 27rem;
+        margin: 1rem 25rem;
     }
 
 
@@ -584,14 +593,13 @@ i{
     }
 
     .title a{
-        font-size: 2.5em;
+        font-size: 2.5rem;
     }
 
+    .title a:hover{
+        color: #b64036;
+    }
     /* DISPLAYED CLOTHING */
-
-    .displayed{
-
-    }
 
     .container-display {
         text-align: center;
@@ -609,20 +617,23 @@ i{
        padding: 4rem 0;
     }
 
-    .signup-container h1{
-        font-size: 2.5em;
-        padding-bottom: 1rem;
-    }
-
-    .signup-container p{
-        margin: 0 23rem;
-        line-height: 3rem;
-        font-size: 1.2rem;
-    }
-
     .signup-form{
-        width: 67%;
+        width: 62%;
     }
+
+
+    .signup-container{
+        min-height: 50%;
+    }
+    .signup-container p{
+        margin: 0 2rem;
+        font-size: 1.1rem;
+    }
+
+    input[type="submit"]:hover{
+        background: #b64036;
+    }
+
      /*FOOTER */
 
 
@@ -633,7 +644,7 @@ i{
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
-        padding: 4em 0;
+        padding: 4rem 0;
         background: #242424;
         color: white;
     }
@@ -641,13 +652,13 @@ i{
     .copyright, .contact,  .contact a , .address {
         font-family: PlayfairDisplay-Regular, sans-serif;
         color: white;
-        font-size: 1.05em;
+        font-size: 1.05rem;
     }
 
 
 
     .contact{
-        padding: 1em 0;
+        padding: 1rem 0;
     }
 
     .address{
@@ -655,13 +666,13 @@ i{
     }
 
     .footer-list, .footer-container{
-        margin: 0 8em;
+        margin: 0 8rem;
 
     }
 
     .footer-list ul li{
         list-style: none;
-        padding: 0.5em 0;
+        padding: 0.5rem 0;
 
 
     }
@@ -679,7 +690,7 @@ i{
 
 
     i{
-        padding: 0 0.7em;
+        padding: 0 0.7rem;
     }
 
 }
