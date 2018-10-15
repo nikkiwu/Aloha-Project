@@ -18,7 +18,7 @@ h1 {
 
 h2{
     word-spacing: 0.2rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: PlayfairDisplay-Regular, sans-serif;
 }
 
@@ -98,8 +98,8 @@ nav ul li a {
 
 .banner{
     width: 100%;
-    height: 46%;
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/banner-girl.png") no-repeat center 60px,url("../images/flower-bkgd.jpg") repeat-x top;
+    height: 400px;
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.50)),url("../images/banner-girl.png") no-repeat center 60px,url("../images/flower-bkgd.jpg") repeat-x top;
     background-size: cover,150px 369px,cover;
     position: relative;
     display: flex;
@@ -117,7 +117,6 @@ nav ul li a {
 }
 .new-collection{
     font-family: Raleway-Medium,sans-serif;
-    font-weight: bold;
     text-transform: uppercase;
     font-size: 1rem;
 
@@ -139,13 +138,6 @@ nav ul li a {
     margin: 1rem 2.5rem;
 }
 
-
-.about-text span{
-    font-style: italic;
-}
-
-
-
 /* CATEGORY SELECTION */
 
 .items{
@@ -165,7 +157,7 @@ nav ul li a {
 
 .cate-big{
     min-height: 28%;
-   min-width: 100%;
+    min-width: 100%;
     border: 3px solid white;
 
 }
@@ -223,13 +215,17 @@ nav ul li a {
 }
 
 /* DISPLAYED CLOTHING */
+
+
 .displayed{
     margin: 4rem 0;
 }
 
 .container-display{
     margin: 0 auto;
+    text-align: center;
 }
+
 .carousel-cell{
     line-height: 3rem;
 
@@ -241,11 +237,21 @@ nav ul li a {
     font-weight: lighter;
 }
 
+.carousel-cell p{
+    color: #969696;
+    font-weight: 700
+}
+
 .container-display h2{
     padding-bottom: 3rem;
-    text-align: center;
 
 }
+
+/*.carousel-cell img{*/
+    /*max-height: 285px;*/
+    /*width: auto*/
+/*;*/
+/*}*/
 
 /* SIGN UP */
 
@@ -319,7 +325,7 @@ footer{
     color: white;
 }
 
-.copyright, .contact,  .contact a , .address {
+.copyright, .contact,  .contact a, .address {
     font-family: PlayfairDisplay-Regular, sans-serif;
     font-size: 0.9rem;
     color: white;
@@ -355,12 +361,6 @@ footer{
     align-items: center;
 
 }
-
-
-
-
-
-
 
 i{
     padding: 1.5rem 0.7rem;
@@ -412,10 +412,6 @@ i{
 
 
     /* BANNER */
-    .banner{
-        height: 60%;
-    }
-
 
     .banner-text{
         font-size: 2.8rem;
@@ -456,7 +452,7 @@ i{
     }
 
     .signup{
-        min-height: 52%;
+        height: 350px;
     }
 
 
@@ -568,7 +564,9 @@ i{
 
 
     .about-text p {
-        margin: 1rem 25rem;
+        margin: 1rem 0;
+        width: 700px;
+
     }
 
 
@@ -601,8 +599,11 @@ i{
     }
     /* DISPLAYED CLOTHING */
 
+
+
     .container-display {
         text-align: center;
+        max-width: 1240px;
     }
 
     .product-container{

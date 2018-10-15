@@ -1,5 +1,18 @@
 # Aloha Project
 
-Recreation of an already created website by REDAcademy. This website contains a clothing items and acessories for sale.
+Recreation of REDAcademy 1st project.
 
-In my recreation, I had to start from scratch and create a responsive website.
+Must create a replica of Aloha website and must have all design aspect in it.
+Must have responsive design, proper coding techinque, and clean code.
+HTML, CSS, JAVASCRIPT, AND JQUERY, USED TO RECREATE WEBSITE.
+
+## Installation
+
+No installation needed because it is a website.
+Just open index file or clone into text editor.
+
+### Meta
+
+Nikki Wu WDP Fall 2018 - nikkiwu9@gmail.com
+
+Orginial creator of website -@REDAcademy

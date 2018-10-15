@@ -38,10 +38,22 @@ $(document).ready(function () {
 });
 
 // MAIN CAROUSEL
+$(".main-carousel").flickity({
+    cellAlign: "left",
+    contain: !0,
+    percentPosition: !1,
+    imagesLoaded: !0,
+    autoPlay: !0,
+    prevNextButtons: !1
+});
 
-$('.main-carousel').flickity({
-    // options
-    cellAlign: 'left',
-    contain: true,
-    wrapAround: true
+// SIGN UP FORM
+
+$('.signup-form').on('submit', function(event) {
+    event.preventDefault();
+    if ($('#email').val() == '') {
+        alert('You missed the field.');
+    } else {
+        alert('Thanks for subscribing!');
+    }
 });
