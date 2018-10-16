@@ -38,6 +38,8 @@ $(document).ready(function () {
 });
 
 // MAIN CAROUSEL
+
+
 $(".main-carousel").flickity({
     cellAlign: "left",
     contain: !0,

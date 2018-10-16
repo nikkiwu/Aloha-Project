@@ -231,6 +231,9 @@ nav ul li a {
 
 }
 
+.main-carousel .carousel-cell {
+    width: 100%;
+}
 .carousel-cell h1{
     color: #e2574c;
     font-size: 1.5rem;
@@ -247,11 +250,7 @@ nav ul li a {
 
 }
 
-/*.carousel-cell img{*/
-    /*max-height: 285px;*/
-    /*width: auto*/
-/*;*/
-/*}*/
+
 
 /* SIGN UP */
 
@@ -445,6 +444,12 @@ i{
     }
 
 
+    /* DISPLAYED CLOTHES */
+
+    .main-carousel .carousel-cell {
+        width: 50%;
+    }
+
     /* SIGN UP */
 
     .signup-form{
@@ -599,6 +604,14 @@ i{
     }
     /* DISPLAYED CLOTHING */
 
+    .carousel-cell img{
+        width: 80%;
+        height: auto;
+    }
+
+    .main-carousel .carousel-cell {
+        width: 25%;
+    }
 
 
     .container-display {
@@ -686,8 +699,6 @@ i{
     .footer-list ul li a:hover, .contact a:hover{
         color: #b64036;
     }
-
-
 
 
     i{

@@ -11,7 +11,15 @@ HTML, CSS, JAVASCRIPT, AND JQUERY, USED TO RECREATE WEBSITE.
 No installation needed because it is a website.
 Just open index file or clone into text editor.
 
-### Meta
+### Personal learning
+
+- Create repsonsive design
+- Media Queries
+- Proper HTML & CSS
+- JQuery
+- REMS and EM
+
+#### Meta
 
 Nikki Wu WDP Fall 2018 - nikkiwu9@gmail.com
 
