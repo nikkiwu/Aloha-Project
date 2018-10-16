@@ -6,6 +6,10 @@ Must create a replica of Aloha website and must have all design aspect in it.
 Must have responsive design, proper coding techinque, and clean code.
 HTML, CSS, JAVASCRIPT, AND JQUERY, USED TO RECREATE WEBSITE.
 
+All Stretch goals finished
+✓ Fixed Nav bar
+✓ "Add to cart" adds one to the cart.
+
 ## Installation
 
 No installation needed because it is a website.
@@ -22,5 +26,7 @@ Just open index file or clone into text editor.
 #### Meta
 
 Nikki Wu WDP Fall 2018 - nikkiwu9@gmail.com
+
+Finished on October 16/18
 
 Orginial creator of website -@REDAcademy

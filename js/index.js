@@ -59,3 +59,24 @@ $('.signup-form').on('submit', function(event) {
         alert('Thanks for subscribing!');
     }
 });
+
+
+// ADD ITEM TO CART
+
+let itemCount = 0;
+
+$('button').click(function (){
+    itemCount ++;
+    $('.itemCount').html(itemCount).css({
+        "text-align": "center",
+        "height": "29px",
+        "width": "36px",
+        "border-radius": "10px",
+        "background": "#e2574c",
+        "color": "white",
+        "font-size": "1.5rem",
+    });
+});
+
+
+
