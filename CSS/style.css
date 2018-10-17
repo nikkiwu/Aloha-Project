@@ -99,8 +99,8 @@ nav ul li a {
 .itemCount{
 
     position: absolute;
-    bottom: 19px;
-    right: 39px;
+    bottom: 33px;
+    right: -4px;
 }
 
 
@@ -423,10 +423,6 @@ i{
         order: 3;
     }
 
-    .shopping-cart img {
-        margin-left: 3rem;
-    }
-
 
     nav {
         order: 0;
@@ -438,7 +434,10 @@ i{
         padding: 0 0.5rem;
     }
 
-
+    .itemCount{
+        bottom: 33px;
+        right: -5px;
+    }
     /* BANNER */
     .banner{
         margin-top: 5rem;
@@ -554,6 +553,7 @@ i{
 
 
     .logo img{
+        margin:  0;
         height: 4rem;
     }
 
@@ -576,8 +576,8 @@ i{
     }
 
     .itemCount{
-        bottom: 34px;
-        right: 68px;
+        bottom: 53px;
+        right: 1px;
     }
 
 

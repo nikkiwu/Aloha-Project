@@ -68,15 +68,14 @@ let itemCount = 0;
 $('button').click(function (){
     itemCount ++;
     $('.itemCount').html(itemCount).css({
+        "font-style": "normal",
         "text-align": "center",
-        "height": "29px",
-        "width": "36px",
-        "border-radius": "10px",
+        "height": "20px",
+        "width": "20px",
+        "border-radius": "50%",
         "background": "#e2574c",
         "color": "white",
-        "font-size": "1.5rem",
+        "font-size": "1rem",
     });
 });
-
-
 
