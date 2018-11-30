@@ -13,7 +13,7 @@ All Stretch goals finished
 
 ## Screenshot
 
-<img src="image/screenshot/desktop.png" height="500px" width="1000px">
+<img src="images/screenshot/desktop.png" height="500px" width="1000px">
 
 ## Installation
 
