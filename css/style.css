@@ -34,7 +34,7 @@ span {
 }
 
 header {
-    margin-top: -8rem;
+    margin-top: -1rem;
     position: fixed;
     background: white;
     z-index: 1;
@@ -417,7 +417,7 @@ i {
 
     /* BANNER */
     .banner {
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
 
     .banner-text {
