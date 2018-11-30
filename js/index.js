@@ -4,7 +4,7 @@ $(document).ready(function () {
     // Remove links that don't actually link to anything
         .not('[href="#"]')
         .not('[href="#0"]')
-        .click(function(event) {
+        .click(function (event) {
             // On-page links
             if (
                 location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
@@ -20,67 +20,67 @@ $(document).ready(function () {
                     event.preventDefault();
                     $('html, body').animate({
                         scrollTop: target.offset().top
-                    }, 1000, function() {
+                    }, 1000, function () {
                         // Callback after animation
                         // Must change focus!
                         var $target = $(target);
                         $target.focus();
-                        if ($target.is(":focus")) { // Checking if the target was focused
+                        if ($target.is(':focus')) { // Checking if the target was focused
                             return false;
                         } else {
-                            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
                             $target.focus(); // Set focus again
                         }
                     });
                 }
             }
         });
-});
-
 // MAIN CAROUSEL
 
 
-$(".main-carousel").flickity({
-    cellAlign: "left",
-    contain: !0,
-    percentPosition: !1,
-    imagesLoaded: !0,
-    autoPlay: !0,
-    prevNextButtons: !1
-});
+    $('.main-carousel').flickity({
+        cellAlign: 'left',
+        contain: !0,
+        percentPosition: !1,
+        imagesLoaded: !0,
+        autoPlay: !0,
+        prevNextButtons: !1
+    });
 
 // SIGN UP FORM
 
-$('.signup-form').on('submit', function(event) {
-    event.preventDefault();
-    if ($('#email').val() == '') {
-        alert('You missed the field.');
-    } else {
-        alert('Thanks for subscribing!');
-    }
-});
+    $('.signup-form').on('submit', function (event) {
+        event.preventDefault();
+        if ($('#email').val() == '') {
+            alert('You missed the field.');
+        } else {
+            alert('Thanks for subscribing!');
+        }
+    });
 
 
 // ADD ITEM TO CART
 
-let itemCount = 0;
+    let itemCount = 0;
 
-$('button').click(function (){
-    itemCount ++;
-    $('.itemCount').html(itemCount).css({
-        "font-style": "normal",
-        "text-align": "center",
-        "height": "20px",
-        "width": "20px",
-        "border-radius": "50%",
-        "background": "#e2574c",
-        "color": "white",
-        "font-size": "1rem",
+    $('button').click(function () {
+        itemCount++;
+        $('.itemCount').html(itemCount).css({
+            'font-style': 'normal',
+            'text-align': 'center',
+            'height': '20px',
+            'width': '20px',
+            'border-radius': '50%',
+            'background': '#e2574c',
+            'color': 'white',
+            'font-size': '1rem',
+        });
     });
-});
 
-$(function() {
-    $("a[href^='#']").not("a[href='#']").click(function() {
-        $("#"+$(this).attr("href").slice(1)+"").focus();
+    $(function () {
+        $('a[href^=\'#\']').not('a[href=\'#\']').click(function () {
+            $('#' + $(this).attr('href').slice(1) + '').focus();
+        });
     });
+
 });

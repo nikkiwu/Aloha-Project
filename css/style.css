@@ -1,10 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body, html{
+body, html {
     height: 100%;
     font-family: Raleway-Light, sans-serif;
     font-size: 1rem;
@@ -16,31 +16,24 @@ h1 {
     font-family: PlayfairDisplay-Regular, sans-serif;
 }
 
-h2{
+h2 {
     word-spacing: 0.2rem;
     font-size: 2rem;
     font-family: PlayfairDisplay-Regular, sans-serif;
 }
 
-
-span{
+span {
     font-style: italic;
     font-weight: lighter;
 }
 
-
-
-
 /* NAV HEADER */
-
 
 #main[tabindex="-1"]:focus {
     outline: 0;
 }
 
-
-
-header{
+header {
     margin-top: -8rem;
     position: fixed;
     background: white;
@@ -52,17 +45,15 @@ header{
     flex-flow: wrap;
 }
 
-.logo, .shopping-cart{
+.logo, .shopping-cart {
     position: relative;
     margin: 1rem 1rem;
 }
 
-.logo img, .shopping-cart img{
+.logo img, .shopping-cart img {
     height: 2.5rem;
     width: auto;
 }
-
-
 
 nav {
     order: 3;
@@ -75,8 +66,6 @@ nav {
     margin: 0 1rem;
 }
 
-
-
 nav ul {
     list-style: none;
     color: #fff;
@@ -85,10 +74,9 @@ nav ul {
 
 }
 
-nav li{
+nav li {
     display: inline-block;
 }
-
 
 nav ul li a {
     padding: 0 1rem;
@@ -99,27 +87,23 @@ nav ul li a {
     font-size: 0.8rem;
     font-family: Raleway-Light, sans-serif;
 
-
 }
 
-.itemCount{
+.itemCount {
 
     position: absolute;
     bottom: 33px;
     right: -4px;
 }
 
-
-
-
 /* BANNER */
 
-.banner{
+.banner {
     margin-top: 8rem;
     width: 100%;
     height: 400px;
-    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.50)),url("../images/banner-girl.png") no-repeat center 60px,url("../images/flower-bkgd.jpg") repeat-x top;
-    background-size: cover,150px 369px,cover;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .50)), url("../images/banner-girl.png") no-repeat center 60px, url("../images/flower-bkgd.jpg") repeat-x top;
+    background-size: cover, 150px 369px, cover;
     position: relative;
     display: flex;
     flex-flow: wrap;
@@ -127,15 +111,16 @@ nav ul li a {
     align-items: center;
 }
 
-.banner-text{
+.banner-text {
     width: 73%;
     text-align: center;
     color: white;
     font-size: 2rem;
     font-family: PlayfairDisplay-Regular, sans-serif;
 }
-.new-collection{
-    font-family: Raleway-Medium,sans-serif;
+
+.new-collection {
+    font-family: Raleway-Medium, sans-serif;
     text-transform: uppercase;
     font-size: 1rem;
 
@@ -143,7 +128,7 @@ nav ul li a {
 
 /* QUICK DESCRIPTION */
 
-.about{
+.about {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,7 +144,7 @@ nav ul li a {
 
 /* CATEGORY SELECTION */
 
-.items{
+.items {
     width: 100%;
     height: 85%;
     display: flex;
@@ -168,27 +153,27 @@ nav ul li a {
     justify-content: center;
 }
 
-.cate-small{
+.cate-small {
     min-height: 25%;
-    min-width:  50%;
+    min-width: 50%;
     border: 3px solid white;
 }
 
-.cate-big{
+.cate-big {
     min-height: 28%;
     min-width: 100%;
     border: 3px solid white;
 
 }
 
-.cate-big, .cate-small{
+.cate-big, .cate-small {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
 }
 
-.title a{
+.title a {
     font-size: 1.5rem;
     color: white;
     text-transform: uppercase;
@@ -197,87 +182,82 @@ nav ul li a {
     text-shadow: 1px 1px 1px #2d2d2d;
 }
 
-
-
-
-
-
-.mens{
-    background:linear-gradient(rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url("../images/mens-category.jpg") center no-repeat;
+.mens {
+    background: linear-gradient(rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/mens-category.jpg") center no-repeat;
     background-size: cover;
 }
 
-.trends{
-    background:linear-gradient(rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),  url("../images/trends-category.jpg")center no-repeat;
+.trends {
+    background: linear-gradient(rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/trends-category.jpg") center no-repeat;
     background-size: cover;
 }
 
-.glasses{
-    background: linear-gradient(rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/glasses-category.jpg") center no-repeat;
+.glasses {
+    background: linear-gradient(rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/glasses-category.jpg") center no-repeat;
     background-size: cover;
 }
 
-.sale{
-    background:linear-gradient(rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),  url("../images/sale-category.jpg") center no-repeat;
+.sale {
+    background: linear-gradient(rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/sale-category.jpg") center no-repeat;
     background-size: cover;
 
 }
 
-.bags{
-    background:linear-gradient(rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),  url("../images/bags-category.jpg") center no-repeat;
+.bags {
+    background: linear-gradient(rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/bags-category.jpg") center no-repeat;
     background-size: cover;
 }
 
-.womens{
-    background:linear-gradient(rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),  url("../images/womens-category.jpg") center no-repeat;
+.womens {
+    background: linear-gradient(rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/womens-category.jpg") center no-repeat;
     background-size: cover;
 }
 
 /* DISPLAYED CLOTHING */
 
-
-.displayed{
+.displayed {
     margin: 4rem 0;
 }
 
-.container-display{
+.container-display {
     margin: 0 auto;
     text-align: center;
 }
 
-.carousel-cell{
+.carousel-cell {
     line-height: 3rem;
 
 }
-.main-carousel{
+
+.main-carousel {
     padding-bottom: 2rem;
 }
-
 
 .main-carousel .carousel-cell {
     width: 100%;
 }
-.carousel-cell h1{
+
+.carousel-cell h1 {
     color: #e2574c;
     font-size: 1.5rem;
     font-weight: lighter;
 }
 
-.carousel-cell p{
+.carousel-cell p {
     color: #969696;
     font-weight: 700
 }
 
-.container-display h2{
+.container-display h2 {
     padding-bottom: 3rem;
 
 }
 
-button{
+button {
     cursor: pointer;
     font-weight: bold;
     font-size: 0.9rem;
-    font-family: Raleway-Medium,sans-serif;
+    font-family: Raleway-Medium, sans-serif;
     background: black;
     color: white;
     border-radius: 25px;
@@ -287,12 +267,12 @@ button{
 
 /* SIGN UP */
 
-.signup{
+.signup {
     margin: 0.5rem 0;
     color: white;
     width: 100%;
     height: 40%;
-    background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url("../images/wave-bkgd.jpg") no-repeat bottom;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .15) 0, rgba(0, 0, 0, .15)), url("../images/wave-bkgd.jpg") no-repeat bottom;
     text-align: center;
     display: flex;
     flex: 1;
@@ -301,18 +281,18 @@ button{
 
 }
 
-.signup-container h2{
+.signup-container h2 {
     text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.42);
     padding: 1rem 0;
 }
 
-.signup-container p{
+.signup-container p {
     line-height: 2rem;
     font-size: 0.9rem;
     margin: 0 2rem;
 }
 
-.signup-form{
+.signup-form {
     display: block;
     margin: 2rem auto;
     position: relative;
@@ -332,7 +312,7 @@ input[type="email"] {
 
 }
 
-input[type="submit"]{
+input[type="submit"] {
     background-color: #e2574c;
     color: #fff;
     cursor: pointer;
@@ -343,50 +323,45 @@ input[type="submit"]{
     top: .2rem;
 }
 
-
-
 /* FOOTER */
 
-
-
-
-footer{
+footer {
     padding: 4rem 0;
     text-align: center;
     background: #242424;
     color: white;
 }
 
-.copyright, .contact,  .contact a, .address {
+.copyright, .contact, .contact a, .address {
     font-family: PlayfairDisplay-Regular, sans-serif;
     font-size: 0.9rem;
     color: white;
 }
 
-
-.contact{
+.contact {
     margin: 1rem 0;
 }
 
-.address{
+.address {
     opacity: 0.5;
 }
 
-.footer-list ul li{
+.footer-list ul li {
     display: inline-block;
     list-style: none;
     padding: 0.5rem 0;
 }
 
-.footer-list ul li a{
+.footer-list ul li a {
     text-decoration: none;
     color: white;
 }
 
-.footer-list span{
+.footer-list span {
     display: none;
 }
-.footer-list, .footer-container{
+
+.footer-list, .footer-container {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -394,12 +369,10 @@ footer{
 
 }
 
-i{
+i {
     padding: 1.5rem 0.7rem;
     font-size: 0.73rem;
 }
-
-
 
 /* ------------------
 
@@ -414,21 +387,18 @@ i{
 
 ---------------------*/
 
-
 @media all and (min-width: 600px) {
     /* NAV HEADER */
-
-    header{
-        margin-top: 0;
+    header {
+        margin-top: -1rem;
         width: 100%;
         justify-content: center;
         flex-flow: nowrap;
     }
 
-    .shopping-cart{
+    .shopping-cart {
         order: 3;
     }
-
 
     nav {
         order: 0;
@@ -436,137 +406,123 @@ i{
         border-top: none;
     }
 
-    nav ul li a{
+    nav ul li a {
         padding: 0 0.5rem;
     }
 
-    .itemCount{
+    .itemCount {
         bottom: 33px;
         right: -5px;
     }
+
     /* BANNER */
-    .banner{
+    .banner {
         margin-top: 5rem;
     }
 
-    .banner-text{
+    .banner-text {
         font-size: 2.8rem;
     }
 
-    .new-collection{
+    .new-collection {
         font-size: 1.2rem;
 
     }
 
     /* QUICK DESCRIPTION */
-
     .about-text p {
         font-size: 1.2rem;
         margin: 1rem 4rem;
     }
 
     /* CATEGORY SELECTION */
-
-    .items{
+    .items {
         height: 45%;
-        flex-flow:  row wrap;
+        flex-flow: row wrap;
         align-items: normal;
     }
 
-    .cate-small, .trends, .glasses, .sale, .bags{
+    .cate-small, .trends, .glasses, .sale, .bags {
         min-width: 28%;
     }
-    .cate-big, .mens, .womens{
+
+    .cate-big, .mens, .womens {
         min-width: 44%;
     }
 
-
     /* DISPLAYED CLOTHES */
-
     .main-carousel .carousel-cell {
         width: 50%;
     }
 
     /* SIGN UP */
-
-    .signup-form{
+    .signup-form {
         width: 54%;
     }
 
-    .signup{
+    .signup {
         height: 350px;
     }
 
-
-    .signup-container p{
+    .signup-container p {
         font-size: 1rem;
         margin: 0 5rem;
     }
 
-    .signup-container{
+    .signup-container {
         padding: 4rem 0;
         max-width: 720px;
 
     }
 
-
-
-
     /* FOOTER */
-
-
-
-
-    footer{
+    footer {
         display: flex;
-        flex-flow: row ;
+        flex-flow: row;
         justify-content: space-between;
         padding: 4rem 3rem;
     }
 
-
-    .footer-list ul li{
+    .footer-list ul li {
         display: block;
         padding: 0;
     }
 
-    .footer-list span{
+    .footer-list span {
         display: inline-block;
         font-size: 0.9rem;
         font-weight: bold;
         font-style: normal;
     }
-    .footer-list, .footer-container{
+
+    .footer-list, .footer-container {
         align-items: normal;
         text-align: left;
         margin: 0;
 
     }
 
-    i{
+    i {
         padding: 0.5rem;
     }
-
 
 }
 
 @media all and (min-width: 1240px) {
 
-    header{
+    header {
 
         justify-content: center;
     }
 
-
-    .logo img{
-        margin:  0;
+    .logo img {
+        margin: 0;
         height: 4rem;
     }
 
-    .shopping-cart img{
+    .shopping-cart img {
         height: 4rem;
     }
-
 
     nav ul li {
         margin: 0 1rem;
@@ -576,42 +532,35 @@ i{
         font-size: 1rem;
     }
 
-    nav ul li a:hover{
+    nav ul li a:hover {
         color: #b64036;
         transition: 1s;
     }
 
-    .itemCount{
+    .itemCount {
         bottom: 53px;
         right: 1px;
     }
 
-
-
-
-
     /* BANNER */
-
-    .banner{
+    .banner {
         height: 70%;
-        background-size: cover,250px 615px,contain;
+        background-size: cover, 250px 615px, contain;
     }
 
-    .banner-text{
+    .banner-text {
         font-size: 3.8rem;
     }
 
-    .new-collection{
+    .new-collection {
         font-size: 1rem;
 
     }
 
     /* QUICK DESCRIPTION */
-
-    .about{
+    .about {
         margin: 2rem 0;
     }
-
 
     .about-text p {
         margin: 1rem 0;
@@ -619,37 +568,35 @@ i{
 
     }
 
-
     /* CATEGORY SELECTION */
-
-    .items{
+    .items {
         height: 85%;
     }
 
-    .cate-small, .trends, .glasses, .sale, .bags{
+    .cate-small, .trends, .glasses, .sale, .bags {
         height: 50%;
         width: 28%;
     }
 
-    .cate-big, .mens, .womens{
+    .cate-big, .mens, .womens {
         height: 50%;
 
     }
 
-    .cate-big, .cate-small{
+    .cate-big, .cate-small {
         flex-flow: row wrap;
     }
 
-    .title a{
+    .title a {
         font-size: 2.5rem;
     }
 
-    .title a:hover{
+    .title a:hover {
         color: #b64036;
     }
-    /* DISPLAYED CLOTHING */
 
-    .carousel-cell img{
+    /* DISPLAYED CLOTHING */
+    .carousel-cell img {
         width: 80%;
         height: auto;
     }
@@ -658,47 +605,39 @@ i{
         width: 25%;
     }
 
-
     .container-display {
         text-align: center;
         max-width: 1240px;
     }
 
-    .product-container{
+    .product-container {
         display: inline-block;
     }
 
-
-
     /* SIGN UP */
-
-    .signup{
-       padding: 4rem 0;
+    .signup {
+        padding: 4rem 0;
     }
 
-    .signup-form{
+    .signup-form {
         width: 62%;
     }
 
-
-    .signup-container{
+    .signup-container {
         min-height: 50%;
     }
-    .signup-container p{
+
+    .signup-container p {
         margin: 0 2rem;
         font-size: 1.1rem;
     }
 
-    input[type="submit"]:hover{
+    input[type="submit"]:hover {
         background: #b64036;
     }
 
-     /*FOOTER */
-
-
-
-
-    footer{
+    /*FOOTER */
+    footer {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
@@ -708,45 +647,41 @@ i{
         color: white;
     }
 
-    .copyright, .contact,  .contact a , .address {
+    .copyright, .contact, .contact a, .address {
         font-family: PlayfairDisplay-Regular, sans-serif;
         color: white;
         font-size: 1.05rem;
     }
 
-
-
-    .contact{
+    .contact {
         padding: 1rem 0;
     }
 
-    .address{
+    .address {
         opacity: 0.5;
     }
 
-    .footer-list, .footer-container{
+    .footer-list, .footer-container {
         margin: 0 8rem;
 
     }
 
-    .footer-list ul li{
+    .footer-list ul li {
         list-style: none;
         padding: 0.5rem 0;
 
-
     }
-    .footer-list ul li a{
+
+    .footer-list ul li a {
         text-decoration: none;
         color: white;
     }
 
-
-    .footer-list ul li a:hover, .contact a:hover{
+    .footer-list ul li a:hover, .contact a:hover {
         color: #b64036;
     }
 
-
-    i{
+    i {
         padding: 0 0.7rem;
     }
 

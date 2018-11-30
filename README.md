@@ -7,8 +7,13 @@ Must have responsive design, proper coding techinque, and clean code.
 HTML, CSS, JAVASCRIPT, AND JQUERY, USED TO RECREATE WEBSITE.
 
 All Stretch goals finished
-✓ Fixed Nav bar
-✓ "Add to cart" adds one to the cart.
+* ✓ Fixed Nav bar
+* ✓ "Add to cart" adds one to the cart.
+
+
+## Screenshot
+
+<img src="image/screenshot/desktop.png" height="500px" width="1000px">
 
 ## Installation
 
